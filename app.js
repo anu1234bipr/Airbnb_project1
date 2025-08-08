@@ -63,9 +63,9 @@ async function main() {
   await mongoose.connect(dbURL);
 }
 
-app.get("/",(req,res)=>{
-   res.send("App is working well");
-});
+// app.get("/",(req,res)=>{
+//    res.send("App is working well");
+// });
 
 app.use(session(sessionOption));
 app.use(flash());
@@ -101,4 +101,3 @@ app.use((err,req,res,next)=>{
 app.listen(port,()=>{
     console.log(`app is listening to port ${port}`);
 });
-//airbnb
