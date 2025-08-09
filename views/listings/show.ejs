@@ -23,7 +23,7 @@
         
      </div>
    </div>
-<% if(currUser && currUser._id.equals(list.owner._id)){ %>
+<% if(currUser && list.owner._id.equals(currUser._id)){ %>
    <div class="btns">
      <a href="/listings/<%=list.id %>/edit" class="btn btn-dark col-1 offset-2 edit-btn">Edit</a>
 
